@@ -4,6 +4,7 @@ let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
 let navBar = document.querySelector('.navigation-bar')
 
+
 function handleClick(e) {
   //1 . Finding particular section you want to move
   //2. After finding section get the Y axis position
@@ -47,6 +48,8 @@ icon.addEventListener('click', function () {
   nav.classList.toggle('show')
   blue.classList.toggle('slide')
   navBar.classList.toggle('show')
+  // brgBtn.style.position='fixed'
+  body.style.position='fixed'
 
 
 })
