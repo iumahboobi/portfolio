@@ -14,7 +14,7 @@ function handleClick(e) {
   const sectionRef = document.querySelector(this.getAttribute('href'))
   const secYaxis = sectionRef.getBoundingClientRect().y
   const scrollY = window.scrollY + secYaxis
-  const finalPosition = scrollY - 200
+  const finalPosition = scrollY - 320
   window.scroll(0, finalPosition)
 
   logoBtn.style.color = '#8892b0'
@@ -60,13 +60,28 @@ function handleMobClick(e) {
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
-  const sectionRefM = document.querySelector(this.getAttribute('href'))
-  const secYaxisM = sectionRefM.getBoundingClientRect().y
-  const scrollYM = window.scrollY + secYaxisM
-  const finalPositionM = scrollYM - 200
-  window.scroll(0, finalPositionM)
+  // const sectionRefM = document.querySelector(this.getAttribute('href'))
+  // const secYaxisM = sectionRefM.getBoundingClientRect().y
+  // const scrollYM = window.scrollY + secYaxisM
+  // const finalPositionM = scrollYM - 200
+  // window.scroll(0, finalPositionM)
 }
 
 document.querySelectorAll('.mob-links a').forEach((ele) => {
   ele.addEventListener('click', handleMobClick)
 })
+/** Hidding nav bar on scroll */
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.transition = "1s";
+      
+  }
+  prevScrollpos = currentScrollPos;
+}
+
