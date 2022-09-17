@@ -16,9 +16,28 @@
   </head>
   <body>
     <section class="container">
-      <section class="main-nav" >
+      <section class="hamburger-icon" id="icon">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear"></div>
+      </section>
+
+      <div class="mob-nav">
+        <ul class="mob-links" id="">
+          <li><a href="#about-me">01. About</a></li>
+          <li><a href="#education">02. Education</a></li>
+          <li><a href="#languages">03. Languages</a></li>
+          <li><a href="#experience">04. Experience</a></li>
+          <li><a href="#projects">05. Projects</a></li>
+          <li><a href="#contact">06. Contact</a></li>
+        </ul>
+      </div>
+      <div class="dark-blue" id="blue"></div>
+
+      <section class="main-nav">
         <nav class="navigation-bar">
-          <h3 class="logo" id="logo-id"><a href="#"> IuM</a></h3>
+          <h3 class="logo" id="logo-id"><a href="#">IuM</a></h3>
           <ul class="right-nav-links" id="myLinks">
             <li><a href="#about-me">About</a></li>
             <li><a href="#education">Education</a></li>
@@ -28,14 +47,17 @@
 
             <li><a href="#contact">Contact</a></li>
           </ul>
-          
+
+          <div class="burger-btn-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </nav>
-        <a href="" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars" id="burger-icon" ></i>
       </section>
       <section class="large-box">
         <div class="mobile-col">
-          <h4 class="items ">Hi, my name is</h4>
+          <h4 class="items">Hi, my name is</h4>
           <h1 class="items mobile-font">Ihsanullah Mahboobi</h1>
           <h2 class="items mobile-font">Lets build things for web together</h2>
           <p class="items para-formatting">
@@ -43,7 +65,9 @@
             work in fun and challenging environment that will courage me to
             improve and learn new and necessary skills For the moment I am
             building Websites, learning back end technologies and a part time
-            Web Development Tutor at <span>DCI</span>.
+            Web Development Tutor at
+            <span>DCI</span>
+            .
           </p>
           <button class="res-btn">Resume</button>
         </div>
@@ -73,7 +97,7 @@
           </div>
         </li>
       </section>
-      <section >
+      <section>
         <li class="large-box-w-icons" id="education">
           <div class="edu-div">
             <h4 class="items link-headings hr-lines">02. Education</h4>
@@ -283,11 +307,18 @@
 
                   <ul class="experience-list">
                     <p>
-                      Design simple pages and components using <span>FIGMA</span> and <span>draw.io</span>
+                      Design simple pages and components using
+                      <span>FIGMA</span>
+                      and
+                      <span>draw.io</span>
                     </p>
                     <p>
                       Developing responsive web application accross platforms
-                      and mobile apps using <span>HTML</span>, <span>Css</span> (Sass) Bootstrap and
+                      and mobile apps using
+                      <span>HTML</span>
+                      ,
+                      <span>Css</span>
+                      (Sass) Bootstrap and
                       <span>Javascript</span>
                     </p>
                     <p>
@@ -295,9 +326,23 @@
                       and Javascript, DOM manipulation, complete application
                       using only Javascript.
                     </p>
-                    <p>Experience in using <span>Webpack</span>, <span>NPM</span>, <span>AJAX</span> and <span>Babel</span>.</p>
                     <p>
-                      Used Technologies like <span>API</span> and version management <span>Git</span>,
+                      Experience in using
+                      <span>Webpack</span>
+                      ,
+                      <span>NPM</span>
+                      ,
+                      <span>AJAX</span>
+                      and
+                      <span>Babel</span>
+                      .
+                    </p>
+                    <p>
+                      Used Technologies like
+                      <span>API</span>
+                      and version management
+                      <span>Git</span>
+                      ,
                       <span>Github</span>
                     </p>
                   </ul>
@@ -567,7 +612,13 @@
           </ul>
         </nav>
         <div class="footer-bar-trade">
-          <p class="trademark">Design and created by <span>I</span>hsanullah <span>M</span>ahboobi</p>
+          <p class="trademark">
+            Design and created by
+            <span>I</span>
+            hsanullah
+            <span>M</span>
+            ahboobi
+          </p>
         </div>
       </section>
     </section>
