@@ -216,7 +216,7 @@ h4 {
 .mob-nav.show {
   width: 100%;
   height: 100vh;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .dark-blue {
@@ -554,14 +554,17 @@ li {
   margin: 0;
   background-color: #0a192f;
   font-size: 18px;
-}
-
-.trademark {
+  flex-direction: column;
+  text-align: center;
+  height: 70px;
   margin: 3rem auto;
 }
 
 /** Media Version */
 @media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .main-nav {
     padding: 0;
   }

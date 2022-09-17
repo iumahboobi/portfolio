@@ -2,6 +2,7 @@ console.log('I am from JS')
 
 let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
+let navBar = document.querySelector('.navigation-bar')
 
 function handleClick(e) {
   //1 . Finding particular section you want to move
@@ -26,9 +27,6 @@ document.querySelectorAll('.right-nav-links a').forEach((ele) => {
 
 logoBtn.addEventListener('click', () => {
   console.log('You clicked me')
-
-  // mainBar.style.padding = ''
-
   mainBar.style.transition = '0.7s'
   logoBtn.style.color = '#64ffda'
 })
@@ -42,11 +40,15 @@ let nav = document.querySelector('.mob-nav')
 let blue = document.getElementById('blue')
 
 icon.addEventListener('click', function () {
+  console.log('burger menu')
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
   nav.classList.toggle('show')
   blue.classList.toggle('slide')
+  navBar.classList.toggle('show')
+
+
 })
 
 /*Mobile functionality*/
@@ -60,11 +62,7 @@ function handleMobClick(e) {
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
-  // const sectionRefM = document.querySelector(this.getAttribute('href'))
-  // const secYaxisM = sectionRefM.getBoundingClientRect().y
-  // const scrollYM = window.scrollY + secYaxisM
-  // const finalPositionM = scrollYM - 200
-  // window.scroll(0, finalPositionM)
+  
 }
 
 document.querySelectorAll('.mob-links a').forEach((ele) => {
@@ -78,7 +76,7 @@ let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.top = "-250px";
     document.getElementById("navbar").style.transition = "1s";
       
   }
