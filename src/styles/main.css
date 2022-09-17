@@ -206,9 +206,8 @@ h4 {
 .mob-nav ul li {
   list-style: none;
   font-size: 24px;
-  color: #fff;
+  color: #64ffda;
   line-height: 2.2;
-  text-transform: uppercase;
   letter-spacing: 1.7px;
   cursor: pointer;
 }
@@ -455,10 +454,11 @@ li {
   width: 100%;
 }
 .project-div .banner .projects {
-  display: grid;
-  grid-template-rows: 18% 17% 64% 22%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
   padding: 1rem;
-  grid-auto-rows: 50px;
 }
 .project-div .banner .projects .project-contents {
   display: flex;
