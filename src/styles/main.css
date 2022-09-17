@@ -641,6 +641,9 @@ li {
   .fa-sharp {
     font-size: 12px;
   }
+  .education-section {
+    margin-left: 30px;
+  }
   .ed-para-content {
     font-size: 1rem;
   }
