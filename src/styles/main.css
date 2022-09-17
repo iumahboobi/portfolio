@@ -572,9 +572,6 @@ li {
   .navigation-bar #burger-icon {
     display: block;
   }
-  .large-box {
-    margin: 0 auto;
-  }
   .mobile-col {
     display: flex;
     justify-content: center;
@@ -634,9 +631,14 @@ li {
   }
   .large-box-w-icons {
     margin: 10rem auto;
+    padding: 4rem 0;
   }
   .large-box-w-icons .edu-div {
     margin: 0;
+  }
+  .large-box {
+    margin: 0 auto;
+    padding: 4rem 0;
   }
   .fa-sharp {
     font-size: 12px;
