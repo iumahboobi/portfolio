@@ -63,7 +63,7 @@ function handleMobClick(e) {
   const sectionRefM = document.querySelector(this.getAttribute('href'))
   const secYaxisM = sectionRefM.getBoundingClientRect().y
   const scrollYM = window.scrollY + secYaxisM
-  const finalPositionM = scrollYM - 250
+  const finalPositionM = scrollYM - 200
   window.scroll(0, finalPositionM)
 }
 
