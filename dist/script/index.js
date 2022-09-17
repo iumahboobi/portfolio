@@ -62,8 +62,8 @@ function handleMobClick(e) {
   icon3.classList.toggle('b')
   const sectionRefM = document.querySelector(this.getAttribute('href'))
   const secYaxisM = sectionRefM.getBoundingClientRect().y
-  const scrollY = window.scrollY + secYaxisM
-  const finalPositionM = scrollY - 250
+  const scrollYM = window.scrollY + secYaxisM
+  const finalPositionM = scrollYM - 250
   window.scroll(0, finalPositionM)
 }
 

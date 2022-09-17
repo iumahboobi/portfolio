@@ -128,10 +128,10 @@ animation-delay: 250ms;
 .hamburger-icon {
 display: none;
 // position: absolute;
-position: fixed;
-height: 60px;
+position: absolute;
+height: 35px;
 width: 60px;
-top: 0;
+top: 2px;
 right: 3%;
 z-index: 1000;
 cursor: pointer;
