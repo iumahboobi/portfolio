@@ -55,7 +55,7 @@ icon.addEventListener('click', function () {
   // brgBtn.style.position='fixed'
   body.classList.toggle('body-flow')
   // body.style.overflow='hidden';
-  mobNavShow.style.position='fixed'
+  // mobNavShow.style.position='fixed'
   // mobNavShow.style.zIndex='9999'
 
   
