@@ -56,7 +56,7 @@ icon.addEventListener('click', function () {
   body.classList.toggle('body-flow')
   // body.style.overflow='hidden';
   mobNavShow.style.position='fixed'
-  mobNavShow.style.zIndex='9999'
+  // mobNavShow.style.zIndex='9999'
 
   
   
