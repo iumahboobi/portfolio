@@ -194,7 +194,7 @@ h4 {
 }
 .mob-nav {
   position: fixed;
-  background-color: #2196f3;
+  background-color: rgba(40, 70, 26, 0.7176470588);
   top: 0;
   right: 0;
   height: 100vh;

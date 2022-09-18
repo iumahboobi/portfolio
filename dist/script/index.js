@@ -54,8 +54,10 @@ icon.addEventListener('click', function () {
   navBar.classList.toggle('show')
   // brgBtn.style.position='fixed'
   body.classList.toggle('body-flow')
-
-
+  // body.style.overflow='hidden';
+  
+  
+  
 })
 
 /*Mobile functionality*/
@@ -69,6 +71,7 @@ function handleMobClick(e) {
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
+  // body.style.overflow='scroll'
   body.classList.toggle('body-flow')
   
 }
