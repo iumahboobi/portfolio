@@ -713,6 +713,7 @@ li {
   .hamburger-icon {
     display: block;
     height: 85px;
+    right: 3%;
   }
   .large-box {
     max-width: 786px;
