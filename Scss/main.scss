@@ -76,7 +76,9 @@ h4 {
   color: $secondary-color;
   font-size: 1.5rem;
 }
-
+.body-flow {
+  overflow: hidden;
+}
 .para-formatting {
   font-size: 1rem;
   line-height: 2.6rem;
@@ -132,6 +134,7 @@ h4 {
 .icon-3 {
   transform: translateY(8px);
   animation-delay: 250ms;
+  // width: 32px;
 }
 
 .hamburger-icon {
@@ -234,7 +237,7 @@ h4 {
   width: 100%;
   // transform:scale(1);
   height: 100vh;
-  opacity: 1;
+  opacity: 0.8;
   // z-index: 999;
 }
 

@@ -3,6 +3,7 @@ console.log('I am from JS')
 let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
 let navBar = document.querySelector('.navigation-bar')
+let body= document.querySelector('body')
 
 
 function handleClick(e) {
@@ -20,6 +21,8 @@ function handleClick(e) {
   window.scroll(0, finalPosition)
 
   logoBtn.style.color = '#8892b0'
+  // body.style.overflow = 'none'
+
 }
 
 document.querySelectorAll('.right-nav-links a').forEach((ele) => {
@@ -37,6 +40,7 @@ let icon = document.getElementById('icon')
 let icon1 = document.getElementById('a')
 let icon2 = document.getElementById('b')
 let icon3 = document.getElementById('c')
+
 let nav = document.querySelector('.mob-nav')
 let blue = document.getElementById('blue')
 
@@ -49,7 +53,7 @@ icon.addEventListener('click', function () {
   blue.classList.toggle('slide')
   navBar.classList.toggle('show')
   // brgBtn.style.position='fixed'
-  body.style.position='fixed'
+  body.classList.toggle('body-flow')
 
 
 })
@@ -65,6 +69,7 @@ function handleMobClick(e) {
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
+  body.classList.toggle('body-flow')
   
 }
 
