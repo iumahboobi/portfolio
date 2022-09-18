@@ -731,4 +731,39 @@ li {
 // Tablet version
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .right-nav-links {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    height: 85px;
+  }
+
+  .large-box {
+    max-width: 786px;
+    margin: 6rem auto;
+  }
+  .large-box-w-icons {
+
+    max-width: 786px;
+    margin: 6rem auto;
+
+  }
+  .mob-nav ul {
+
+    left: 40%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+  .footer-bar {
+
+    position: inherit;
+
+
+  }
 }
