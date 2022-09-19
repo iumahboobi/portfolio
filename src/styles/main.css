@@ -44,7 +44,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 62.5%;
   color: #ccd6f6;
   background-color: #0a192f;
@@ -129,13 +129,13 @@ h4 {
 .icon-1 {
   transform: translateY(-8px);
   -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 
 .icon-3 {
   transform: translateY(8px);
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
 }
 
 .hamburger-icon {
@@ -292,7 +292,7 @@ h4 {
 }
 
 .right-nav-links li::before {
-  content: "0" counter(li) ".";
+  content: '0' counter(li) '.';
   color: #64ffda;
   display: inline-block;
   margin-right: 0.5em;
@@ -302,15 +302,9 @@ li {
   counter-increment: li;
 }
 
-.large-box {
-  max-width: 986px;
-  margin: 18rem auto;
-  list-style: none;
-}
-
 .large-box-w-icons {
-  max-width: 1086px;
-  margin: 18rem auto;
+  width: min(90%, 70.5rem);
+  margin: 15em auto;
   list-style: none;
 }
 .large-box-w-icons .edu-div {
@@ -360,9 +354,22 @@ li {
 }
 
 .hr-lines:after {
-  content: "";
+  content: '';
   display: block;
-  height: 3px;
+  height: 1px;
+  width: 140px;
+  position: absolute;
+  top: 44%;
+  left: 108%;
+  background: #64ffda;
+}
+
+.footer-hr-line {
+  position: relative;
+  max-width: 500px;
+  content: '';
+  display: block;
+  height: 1px;
   width: 140px;
   position: absolute;
   top: 44%;
@@ -372,7 +379,7 @@ li {
 
 .profile-pic {
   background-size: cover;
-  background-image: url("/dist/images/mscihsanullah-mahboobi.1024x1024.jpg");
+  background-image: url('/dist/images/mscihsanullah-mahboobi.1024x1024.jpg');
   width: 24rem;
   height: 18rem;
   border: solid 2px #64ffda;
@@ -396,7 +403,7 @@ li {
 }
 
 .experience-list {
-  list-style-type: "";
+  list-style-type: '';
   font-size: 1.4rem;
 }
 .experience-list p {
@@ -459,7 +466,7 @@ li {
   padding: 1rem 0;
 }
 .project-div .banner {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   background-color: rgba(17, 37, 66, 0.9490196078);
@@ -494,7 +501,7 @@ li {
   width: 320px;
   height: 350px;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  background-image: url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
 }
 
 .contact-section {
@@ -533,7 +540,7 @@ li {
 .d-flex-row i {
   padding: 0 2rem;
   transform: rotate(90deg);
-  width: 25px;
+  /* width: 25px; */
 }
 .d-flex-row i:hover {
   color: #64ffda;
@@ -571,6 +578,10 @@ li {
   text-align: center;
   height: 70px;
   margin: 3rem auto;
+}
+
+.contact-icons {
+  display: none;
 }
 
 /** Media Version */
@@ -643,7 +654,7 @@ li {
   }
   .large-box-w-icons {
     margin: 0rem auto;
-    padding: 6rem 0;
+    padding: 8rem 0;
   }
   .large-box-w-icons .edu-div {
     margin: 0;
@@ -680,7 +691,7 @@ li {
     height: auto;
   }
   .experience-list {
-    list-style-type: "";
+    list-style-type: '';
     font-size: 1.4rem;
   }
   .experience-list p {
@@ -711,11 +722,28 @@ li {
   .d-flex-row i {
     padding: 0 2rem;
     transform: rotate(180deg);
-    width: 25px;
+    /* width: 25px; */
   }
   .footer-bar {
     position: inherit;
     display: none;
+  }
+
+  .contact-icons {
+    display: flex;
+    margin-inline: auto;
+    width: min(45%);
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .contact-icons:hover {
+
+    /* color: red; */
+    cursor: pointer
+
+  }
+  .contact-icons i {
+    padding: 1rem
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -729,11 +757,11 @@ li {
   }
   .large-box {
     max-width: 786px;
-    margin: 6rem auto;
+    margin: 6em auto;
   }
   .large-box-w-icons {
     max-width: 786px;
-    margin: 6rem auto;
+    margin: 3em auto;
   }
   .mob-nav ul {
     left: 40%;
@@ -743,6 +771,24 @@ li {
     justify-content: space-between;
   }
   .footer-bar {
-    position: inherit;
+    display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+
+  .contact-icons {
+    display: flex;
+    margin-inline: auto;
+    width: min(45%);
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .contact-icons:hover {
+
+    /* color: red; */
+    cursor: pointer
+
+  }
+  .contact-icons i {
+    padding: 1rem
+  }
+
+} /*# sourceMappingURL=main.css.map */
