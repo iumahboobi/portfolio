@@ -729,7 +729,7 @@ li {
   .contact-icons {
     display: flex;
     justify-content: space-between;
-    width: min(38%, 45rem);
+    width: min(45%, 45rem);
     margin: 0 auto;
   }
   .contact-icons i {
