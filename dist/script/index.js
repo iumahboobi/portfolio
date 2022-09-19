@@ -17,7 +17,7 @@ function handleClick(e) {
   const sectionRef = document.querySelector(this.getAttribute('href'))
   const secYaxis = sectionRef.getBoundingClientRect().y
   const scrollY = window.scrollY + secYaxis
-  const finalPosition = scrollY - 130
+  const finalPosition = scrollY - 110
   window.scroll(0, finalPosition)
 
   logoBtn.style.color = '#8892b0'

@@ -304,8 +304,17 @@ li {
 
 .large-box {
   max-width: 986px;
-  margin: 16rem auto;
+  margin: 18rem auto;
   list-style: none;
+}
+
+.large-box-w-icons {
+  max-width: 1086px;
+  margin: 18rem auto;
+  list-style: none;
+}
+.large-box-w-icons .edu-div {
+  margin-left: 50px;
 }
 
 .list-box {
@@ -419,15 +428,6 @@ li {
 
 .ed-para-content {
   font-size: 1rem;
-}
-
-.large-box-w-icons {
-  max-width: 1086px;
-  margin: 18rem auto;
-  list-style: none;
-}
-.large-box-w-icons .edu-div {
-  margin-left: 50px;
 }
 
 .icons-edu {
