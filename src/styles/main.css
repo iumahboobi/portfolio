@@ -651,6 +651,7 @@ li {
   .large-box-w-icons {
     margin: 0rem auto;
     padding: 2rem 0;
+    height: 100vh;
   }
   .large-box-w-icons .edu-div {
     margin: 0;
@@ -667,7 +668,6 @@ li {
   .hero-after {
     background-color: rgba(10, 25, 47, 0.95);
     width: 100%;
-    padding: 1rem;
   }
   /*Hero banner ends*/
   .fa-sharp {
