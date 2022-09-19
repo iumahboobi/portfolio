@@ -540,7 +540,6 @@ li {
 .d-flex-row i {
   padding: 0 2rem;
   transform: rotate(90deg);
-  width: 25px;
 }
 .d-flex-row i:hover {
   color: #64ffda;
@@ -578,6 +577,10 @@ li {
   text-align: center;
   height: 70px;
   margin: 3rem auto;
+}
+
+.contact-icons {
+  display: none;
 }
 
 /** Media Version */
@@ -651,7 +654,6 @@ li {
   .large-box-w-icons {
     margin: 0rem auto;
     padding: 2rem 0;
-    height: 100vh;
   }
   .large-box-w-icons .edu-div {
     margin: 0;
@@ -724,6 +726,17 @@ li {
     position: inherit;
     display: none;
   }
+  .contact-icons {
+    display: flex;
+    justify-content: space-between;
+    width: min(38%, 45rem);
+    margin: 0 auto;
+  }
+  .contact-icons i {
+    padding: 1rem;
+    color: #8892b0;
+    font-size: 25px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .right-nav-links {
@@ -750,6 +763,17 @@ li {
     justify-content: space-between;
   }
   .footer-bar {
-    display: block;
+    display: none;
+  }
+  .contact-icons {
+    display: flex;
+    justify-content: space-between;
+    width: min(38%, 45rem);
+    margin: 0 auto;
+  }
+  .contact-icons i {
+    padding: 1rem;
+    color: #8892b0;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

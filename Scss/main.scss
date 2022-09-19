@@ -553,7 +553,7 @@ li {
   i {
     padding: 0 2rem;
     transform: rotate(90deg);
-    width: 25px;
+    // width: 25px;
   }
   i:hover {
     color: $secondary-color;
@@ -603,6 +603,13 @@ li {
   margin: 3rem auto;
 }
 
+
+.contact-icons {
+
+  display: none;
+
+
+}
 // animation
 
 /** Media Version */
@@ -701,7 +708,7 @@ li {
   .large-box-w-icons {
     margin: 0rem auto;
     padding: 2rem 0;
-    height: 100vh;
+    // height: 100vh;
 
     .edu-div {
       margin: 0;
@@ -792,6 +799,22 @@ li {
     position: inherit;
     display: none;
   }
+  .contact-icons {
+
+    display: flex;
+    justify-content: space-between;
+    width: min(38%,45rem);
+    margin: 0 auto;
+
+
+  }
+  .contact-icons i {
+
+    padding: 1rem;
+    color:$text-two-color;
+    font-size: 25px;
+
+  }
 }
 
 // Tablet version
@@ -823,6 +846,24 @@ li {
     justify-content: space-between;
   }
   .footer-bar {
-    display: block;
+    display: none;
   }
+  .contact-icons {
+
+    display: flex;
+    justify-content: space-between;
+    width: min(38%,45rem);
+    margin: 0 auto;
+
+
+  }
+  .contact-icons i {
+
+    padding: 1rem;
+    color:$text-two-color;
+    font-size: 25px;
+
+  }
+
+
 }
