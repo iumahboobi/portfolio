@@ -3,7 +3,7 @@ console.log('I am from JS')
 let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
 let navBar = document.querySelector('.navigation-bar')
-let htmBody= document.querySelector('html')
+let htmBody= document.querySelector('body')
 
 
 function handleClick(e) {
