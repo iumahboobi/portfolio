@@ -3,7 +3,7 @@ console.log('I am from JS')
 let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
 let navBar = document.querySelector('.navigation-bar')
-let body= document.querySelector('body')
+let bodyHtm= document.querySelector('html')
 
 
 function handleClick(e) {
@@ -52,14 +52,9 @@ icon.addEventListener('click', function () {
   nav.classList.toggle('show')
   blue.classList.toggle('slide')
   navBar.classList.toggle('show')
-  // brgBtn.style.position='fixed'
-  body.classList.toggle('body-flow')
-  // body.style.overflow='hidden';
-  // mobNavShow.style.position='fixed'
-  // mobNavShow.style.zIndex='9999'
-
-  
-  
+  // body.classList.toggle('body-flow')
+ bodyHtm.classList.toggle('over-flow-hidden')
+ 
   
 })
 

@@ -43,6 +43,7 @@ html {
 }
 
 body {
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
   font-family: "Courier New", Courier, monospace;
   font-size: 62.5%;
@@ -78,7 +79,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-.body-flow {
+.over-flow-hidden {
   overflow: hidden;
 }
 
