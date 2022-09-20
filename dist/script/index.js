@@ -31,23 +31,27 @@ document.querySelectorAll('.right-nav-links a').forEach((ele) => {
 
 
 // Prevent scrolling on safari
-// document.ontouchmove = function(event){
-//   event.preventDefault();
-// }
+const $body = document.querySelector('body');
+let scrollPosition = 0;
 
-
-function preventDefault(e){
-  e.preventDefault();
-}
-
-function disableScroll(){
-  document.body.addEventListener('touchmove', preventDefault, { passive: false });
-}
-function enableScroll(){
-  document.body.removeEventListener('touchmove', preventDefault);
-}
-
-
+ 
+const  enable=()=> {
+    scrollPosition = window.pageYOffset;
+    $body.style.overflow = 'hidden';
+    $body.style.position = 'fixed';
+    $body.style.top = `-${scrollPosition}px`;
+    $body.style.width = '100%';
+  }
+  const disable=()=> {
+    $body.style.removeProperty('overflow');
+    $body.style.removeProperty('position');
+    $body.style.removeProperty('top');
+    $body.style.removeProperty('width');
+    window.scrollTo(0, scrollPosition);
+  }
+;
+enable()
+disable()
 /*End*/ 
 
 
