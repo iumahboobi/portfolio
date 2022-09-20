@@ -29,6 +29,11 @@ document.querySelectorAll('.right-nav-links a').forEach((ele) => {
   ele.addEventListener('click', handleClick)
 })
 
+
+// Prevent scrolling on safari
+document.ontouchmove = function(event){
+  event.preventDefault();
+}
 logoBtn.addEventListener('click', () => {
   console.log('You clicked me')
   mainBar.style.transition = '0.7s'
