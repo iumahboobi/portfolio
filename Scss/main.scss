@@ -143,7 +143,7 @@ h4 {
   position: absolute;
   height: 35px;
   width: 60px;
-  top: 16px;
+  top: 4px;
   right: 1%;
   z-index: 1000;
   cursor: pointer;
@@ -636,6 +636,8 @@ li {
   }
 
   .navigation-bar {
+    padding: 0.5rem 0
+    ;
     .right-nav-links {
       display: none;
     }
