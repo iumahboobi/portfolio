@@ -569,12 +569,12 @@ li {
     transform: rotate(0deg);
   }
 }
-// .d-flex-row > * {
-//   flex-basis: 100%;
-// }
-// .d-flex-row > * + * {
-//   margin-left: 3rem;
-// }
+.website-counter {
+
+  font-size: 1.5rem;
+  color: $secondary-color;
+
+}
 .footer-bar {
   display: flex;
   justify-content: space-between;

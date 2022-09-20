@@ -552,6 +552,11 @@ li {
   transform: rotate(0deg);
 }
 
+.website-counter {
+  font-size: 1.5rem;
+  color: #64ffda;
+}
+
 .footer-bar {
   display: flex;
   justify-content: space-between;
