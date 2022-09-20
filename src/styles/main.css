@@ -552,6 +552,12 @@ li {
   transform: rotate(0deg);
 }
 
+.visitors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .website-counter {
   font-size: 1.5rem;
   color: #64ffda;

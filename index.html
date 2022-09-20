@@ -14,6 +14,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script async src="https://api.countapi.xyz/hit/codefoxx.com/2f044522-0c1c-49ab-b251-3f7fd0f99a3e?callback=websiteVisits"></script>
+
   </head>
   <body>
     <section class="container">
@@ -629,8 +632,6 @@
               <button class="res-btn half-btn">
                 <a href="mailto:iumahboobi@gmail.com" target="#">Say Hello</a>
               </button>
-              <div>Website visitors:</div>
-              <div class="website-counter"></div>
             </div>
           </div>
         </div>
@@ -663,12 +664,18 @@
             Design and Created by
           </p>
           <p>
-            <span>I</span>
-            hsanullah
-            <span>M</span>
-            ahboobi
+            <span>I</span>hsanullah
+            <span>M</span>ahboobi
           </p>
         </div>
+
+        <div class="visitors">
+          <div>You visit <span class="website-counter"></span> times </div>
+          
+          <div>Total Visitors: <span id="visits" class="website-counter"></span> </div>
+          
+        </div>
+
         <div class="contact-icons">
           <a href="mailto:iumahboobi@gmail.com" target="#">
             <i class="fa-brands fa-google"></i>

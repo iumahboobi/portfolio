@@ -98,7 +98,7 @@ let currentScrollPos = window.pageYOffset;
 }
 
 /*Visitor counter*/ 
-
+// Indiividual User
 let counterContainer = document.querySelector('.website-counter')
 let visitCount = localStorage.getItem('page_view')
 
@@ -115,5 +115,12 @@ else {
 
 }
 counterContainer.innerHTML =visitCount;
+
+// Total Users
+
+
+function websiteVisits(response) {
+  document.querySelector("#visits").textContent = response.value;
+}
 
 
