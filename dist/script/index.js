@@ -31,9 +31,27 @@ document.querySelectorAll('.right-nav-links a').forEach((ele) => {
 
 
 // Prevent scrolling on safari
-document.ontouchmove = function(event){
-  event.preventDefault();
+// document.ontouchmove = function(event){
+//   event.preventDefault();
+// }
+
+
+function preventDefault(e){
+  e.preventDefault();
 }
+
+function disableScroll(){
+  document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll(){
+  document.body.removeEventListener('touchmove', preventDefault);
+}
+
+
+/*End*/ 
+
+
+
 logoBtn.addEventListener('click', () => {
   console.log('You clicked me')
   mainBar.style.transition = '0.7s'
