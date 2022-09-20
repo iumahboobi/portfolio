@@ -3,7 +3,7 @@ console.log('I am from JS')
 let mainBar = document.querySelector('.main-nav')
 let logoBtn = document.getElementById('logo-id')
 let navBar = document.querySelector('.navigation-bar')
-let bodyHtm= document.querySelector('html')
+let htmBody= document.querySelector('html')
 
 
 function handleClick(e) {
@@ -31,27 +31,7 @@ document.querySelectorAll('.right-nav-links a').forEach((ele) => {
 
 
 // Prevent scrolling on safari
-const $body = document.querySelector('body');
-let scrollPosition = 0;
 
- 
-const  enable=()=> {
-    scrollPosition = window.pageYOffset;
-    $body.style.overflow = 'hidden';
-    $body.style.position = 'fixed';
-    $body.style.top = `-${scrollPosition}px`;
-    $body.style.width = '100%';
-  }
-  const disable=()=> {
-    $body.style.removeProperty('overflow');
-    $body.style.removeProperty('position');
-    $body.style.removeProperty('top');
-    $body.style.removeProperty('width');
-    window.scrollTo(0, scrollPosition);
-  }
-;
-enable()
-disable()
 /*End*/ 
 
 
@@ -67,7 +47,6 @@ let icon = document.getElementById('icon')
 let icon1 = document.getElementById('a')
 let icon2 = document.getElementById('b')
 let icon3 = document.getElementById('c')
-
 let nav = document.querySelector('.mob-nav')
 let blue = document.getElementById('blue')
 
@@ -79,8 +58,7 @@ icon.addEventListener('click', function () {
   nav.classList.toggle('show')
   blue.classList.toggle('slide')
   navBar.classList.toggle('show')
-  // body.classList.toggle('body-flow')
- bodyHtm.classList.toggle('over-flow-hidden')
+ htmBody.classList.toggle('over-flow-hidden')
  
   
 })
@@ -97,7 +75,7 @@ function handleMobClick(e) {
   icon2.classList.toggle('c')
   icon3.classList.toggle('b')
   // body.style.overflow='scroll'
-  bodyHtm.classList.toggle('over-flow-hidden')
+  htmBody.classList.toggle('over-flow-hidden')
   
 }
 
