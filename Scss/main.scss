@@ -80,7 +80,7 @@ h4 {
 }
 .over-flow-hidden {
   overflow: hidden;
-  position: fixed;;
+  position: fixed;
 }
 .para-formatting {
   font-size: 1rem;
@@ -824,6 +824,61 @@ li {
     color: $text-two-color;
     font-size: 25px;
   }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {  
+
+
+.right-nav-links {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    height: 85px;
+    right: 3%;
+  }
+  .large-box-w-icons {
+
+    margin: 10rem auto;
+
+
+  }
+  .para-formatting {
+
+    line-height: 1.6rem;
+    max-width: 100%;
+
+  }
+  .profile-pic {
+
+    margin: 0 auto;
+    height: 24rem;
+    background-position: center;
+
+  }
+  .list-box {
+
+
+  }
+  .d-flex-col {
+
+    flex-direction: column;
+
+  }
+  .proj-box {
+
+    width:100%
+
+  }
+  .footer-bar {
+    display: none;
+  }
+
+
+
 }
 
 // Tablet version

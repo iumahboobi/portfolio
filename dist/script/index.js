@@ -50,7 +50,10 @@ let icon3 = document.getElementById('c')
 let nav = document.querySelector('.mob-nav')
 let blue = document.getElementById('blue')
 
-icon.addEventListener('click', function () {
+icon.addEventListener('click', function (e) {
+  
+  e.stopPropagation()
+
   console.log('burger menu')
   icon1.classList.toggle('a')
   icon2.classList.toggle('c')
@@ -66,8 +69,10 @@ icon.addEventListener('click', function () {
 /*Mobile functionality*/
 let brgBtn = document.querySelector('.hamburger-icon')
 let mobNavShow = document.querySelector('.mob-nav', '.show')
+
 function handleMobClick(e) {
   // e.preventDefault();
+
   console.log('I am clicked')
   // mobNavShow.style.position=' absolute'
   nav.classList.toggle('show')
