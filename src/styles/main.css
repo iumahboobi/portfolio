@@ -78,6 +78,10 @@ h4 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
 .over-flow-hidden {
   overflow: hidden;
   position: fixed;
@@ -598,6 +602,18 @@ li {
 }
 
 /** Media Version */
+@media (max-width: 375px) {
+  .large-box-w-icons {
+    min-height: 120vh;
+  }
+  .res-btn {
+    margin: auto;
+    width: 80%;
+  }
+  .list-box {
+    margin-top: 8rem;
+  }
+}
 @media (max-width: 480px) {
   .main-nav {
     padding: 0;
@@ -763,6 +779,7 @@ li {
     display: block;
     height: 85px;
     right: 3%;
+    top: 18px;
   }
   .large-box-w-icons {
     margin: 10rem auto;
@@ -770,6 +787,7 @@ li {
   .para-formatting {
     line-height: 1.6rem;
     max-width: 100%;
+    margin: auto 0 2rem auto;
   }
   .profile-pic {
     margin: 0 auto;
