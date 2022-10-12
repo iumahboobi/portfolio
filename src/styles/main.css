@@ -440,7 +440,7 @@ li {
 }
 
 .ed-para-content {
-  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .icons-edu {
@@ -462,6 +462,7 @@ li {
 
 .ed-para-content {
   font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .project-div {
