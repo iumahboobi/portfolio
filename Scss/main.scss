@@ -327,7 +327,7 @@ li {
 .list-box {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 120vh;
   justify-content: space-evenly;
 }
 .items {
@@ -636,7 +636,8 @@ li {
     width: 80%;
   }
   .list-box {
-    margin-top: 8rem
+    margin-top: 8rem;
+    height:120vh
   }
 }
 
@@ -724,7 +725,7 @@ li {
   .large-box-w-icons {
     margin: 0rem auto;
     padding: 2rem 0;
-    // height: 100vh;
+    height: 120vh;
 
     .edu-div {
       margin: 0;
@@ -841,6 +842,7 @@ li {
   }
   .large-box-w-icons {
     margin: 10rem auto;
+    height: 120vh;
   }
   .para-formatting {
     line-height: 1.6rem;
@@ -853,6 +855,7 @@ li {
     background-position: center;
   }
   .list-box {
+    height: 120vh;
   }
   .d-flex-col {
     flex-direction: column;
