@@ -319,7 +319,6 @@ li {
 .list-box {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   justify-content: space-evenly;
 }
 
@@ -447,6 +446,7 @@ li {
   display: grid;
   grid-template-columns: 3% 73% 24%;
   align-items: baseline;
+  margin-top: 12px;
 }
 .icons-edu .icons-flex-col {
   display: flex;
