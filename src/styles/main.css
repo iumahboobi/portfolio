@@ -496,6 +496,12 @@ li {
   color: #ec0cb4;
   font-weight: bold;
 }
+.note-span {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(26, 162, 130);
+}
 .project-div .banner .projects .project-contents .fa-regular {
   -webkit-text-fill-color: rgba(100, 255, 219, 0);
   -webkit-text-stroke-width: 2px;
