@@ -492,6 +492,10 @@ li {
   justify-content: space-between;
   font-size: 1.5rem;
 }
+.new-project {
+  color: #ec0cb4;
+  font-weight: bold;
+}
 .project-div .banner .projects .project-contents .fa-regular {
   -webkit-text-fill-color: rgba(100, 255, 219, 0);
   -webkit-text-stroke-width: 2px;
