@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-scroll-lock": "^4.0.0-beta.0"
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "portfolio": "file:"
   }
 }

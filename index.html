@@ -1,832 +1,976 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ihsanullah Mahboobi" />
+    <title>IuM Mahboobi</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ihsanullah Mahboobi" />
-  <title>IuM Mahboobi</title>
-  <link rel="stylesheet" href="./src/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="path/to/fontawesome.min.css" /> -->
+    <script
+      async
+      src="https://api.countapi.xyz/hit/codefoxx.com/2f044522-0c1c-49ab-b251-3f7fd0f99a3e?callback=websiteVisits"
+    ></script>
+  </head>
 
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="path/to/fontawesome.min.css" /> -->
-  <script async
-    src="https://api.countapi.xyz/hit/codefoxx.com/2f044522-0c1c-49ab-b251-3f7fd0f99a3e?callback=websiteVisits"></script>
-</head>
+  <body>
+    <section class="container">
+      <section class="main-nav" id="navbar">
+        <nav class="navigation-bar">
+          <h3 class="logo" id="logo-id"><a href="#">IuM</a></h3>
+          <ul class="right-nav-links" id="myLinks">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
 
-<body>
-  <section class="container">
-    <section class="main-nav" id="navbar">
-      <nav class="navigation-bar">
-        <h3 class="logo" id="logo-id"><a href="#">IuM</a></h3>
-        <ul class="right-nav-links" id="myLinks">
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <section class="hamburger-icon" id="icon">
-          <div class="icon-1" id="a"></div>
-          <div class="icon-2" id="b"></div>
-          <div class="icon-3" id="c"></div>
-          <div class="clear"></div>
-        </section>
-        <div class="dark-blue" id="blue"></div>
-        <div class="mob-nav">
-          <ul class="mob-links" id="">
-            <li><a href="#about-me" aria-label="about">01. About</a></li>
-            <li>
-              <a href="#education" aria-label="education">02. Education</a>
-            </li>
-            <li>
-              <a href="#languages" aria-label="languages">03. Languages</a>
-            </li>
-            <li>
-              <a href="#experience" aria-label="experience">04. Experience</a>
-            </li>
-            <li>
-              <a href="#projects" aria-label="projects">05. Projects</a>
-            </li>
-            <li><a href="#contact" aria-label="contact">06. Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-      </nav>
-    </section>
+          <section class="hamburger-icon" id="icon">
+            <div class="icon-1" id="a"></div>
+            <div class="icon-2" id="b"></div>
+            <div class="icon-3" id="c"></div>
+            <div class="clear"></div>
+          </section>
+          <div class="dark-blue" id="blue"></div>
+          <div class="mob-nav">
+            <ul class="mob-links" id="">
+              <li><a href="#about-me" aria-label="about">01. About</a></li>
+              <li>
+                <a href="#education" aria-label="education">02. Education</a>
+              </li>
+              <li>
+                <a href="#languages" aria-label="languages">03. Languages</a>
+              </li>
+              <li>
+                <a href="#experience" aria-label="experience">04. Experience</a>
+              </li>
+              <li>
+                <a href="#projects" aria-label="projects">05. Projects</a>
+              </li>
+              <li><a href="#contact" aria-label="contact">06. Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
 
-    <section class="large-box-w-icons">
-      <div class="hero-background">
-        <div class="hero-after">
-          <div class="mobile-col">
-            <h4 class="items">Hi, my name is</h4>
-            <h1 class="items mobile-font">Ihsanullah Mahboobi</h1>
-            <h2 class="items mobile-font">
-              Lets build things for web together
-            </h2>
+      <section class="large-box-w-icons">
+        <div class="hero-background">
+          <div class="hero-after">
+            <div class="mobile-col">
+              <h4 class="items">Hi, my name is</h4>
+              <h1 class="items mobile-font">Ihsanullah Mahboobi</h1>
+              <h2 class="items mobile-font">
+                Lets build things for web together
+              </h2>
+              <p class="items para-formatting">
+                As Master of Science graduate seeking to find the opportunity to
+                work in fun and challenging environment that will courage me to
+                improve and learn new and necessary skills. For the moment I am
+                building Websites, learning back end technologies and a part
+                time Web Development Tutor at
+                <span>DCI</span>
+                .
+              </p>
+              <button class="res-btn">
+                <a href="mailto:iumahboobi@gmail.com" target="#">Resume</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-me" class="large-box-w-icons">
+        <div class="list-box">
+          <h4 class="items link-headings hr-lines">01. About Me</h4>
+
+          <div class="d-flex-col">
             <p class="items para-formatting">
-              As Master of Science graduate seeking to find the opportunity to
-              work in fun and challenging environment that will courage me to
-              improve and learn new and necessary skills. For the moment I am
-              building Websites, learning back end technologies and a part
-              time Web Development Tutor at
-              <span>DCI</span>
-              .
+              My name is Ihsanullah Mahboobi. I have completed a Master's in
+              Computational Science and Engineering from the University of
+              Rostock, Germany. My interest in web development began when I
+              completed a Pre-thesis Project using web development technologies.
+              After graduation, I started working on user interfaces and built
+              some beginner-level front-end projects. With this knowledge, I
+              have also undertaken some online freelance projects. Furthermore,
+              I completed a one-year Fullstack Web Development program from DCI
+              and worked as a tutor during the program.
             </p>
-            <button class="res-btn">
-              <a href="mailto:iumahboobi@gmail.com" target="#">Resume</a>
-            </button>
+            <div class="items profile-pic"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="about-me" class="large-box-w-icons">
-      <div class="list-box">
-        <h4 class="items link-headings hr-lines">01. About Me</h4>
-
-        <div class="d-flex-col">
-          <p class="items para-formatting">
-            My name is Ihsanullah Mahboobi. I have completed a Master's in Computational Science and Engineering from
-            the University of Rostock, Germany.
-            My interest in web development began when I completed a Pre-thesis
-            Project using web development technologies.
-            After graduation, I started working on user interfaces and built
-            some beginner-level front-end projects.
-            With this knowledge, I have also undertaken some online freelance
-            projects. Furthermore, I completed a one-year Fullstack Web Development program from DCI and worked as a
-            tutor during the program.
-          </p>
-          <div class="items profile-pic"></div>
-        </div>
-      </div>
-    </section>
-    <section class="large-box-w-icons">
-      <div id="education" class="list-box">
-        <div class="edu-div">
-          <h4 class="items link-headings hr-lines">02. Education</h4>
-        </div>
-
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
+      </section>
+      <section class="large-box-w-icons">
+        <div id="education" class="list-box">
+          <div class="edu-div">
+            <h4 class="items link-headings hr-lines">02. Education</h4>
           </div>
 
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">Fullstack Web Development</h5>
-                <p class="ed-para-content">
-                  Digital Career Institute, Hamburg, Germany
-                </p>
-              </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
             </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">2022 March - 2023 February</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
 
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">
-                  Msc Computational Science and Engineering
-                </h5>
-                <p class="ed-para-content">
-                  University of Rostock, Rostock, Germany
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">2015 October - 2019 October</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">
-                  Bachelors in Computer Engineering
-                </h5>
-                <p class="ed-para-content">
-                  Hamdard University, Karachi, Pakistan
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">2009 March - 2013 May</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="languages" class="large-box-w-icons">
-      <div class="list-box">
-        <div class="edu-div">
-          <h4 class="items link-headings hr-lines">03. Languages</h4>
-        </div>
-
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">Arabic</h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">Basic</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">English</h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">Fluent</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">German</h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">C1</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">Pashto</h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">Fluent</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">Urdu / Hindi</h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">Fluent</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="large-box-w-icons">
-      <div class="list-box">
-        <div class="edu-div">
-          <h4 class="items link-headings hr-lines">04. Experience</h4>
-        </div>
-
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">
-                  Developer (SiteFusion Gmbh, Straubing)
-                </h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany
-                  </p> -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">2023 May - 2024 April</p>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">
-                  Tutor DCI (Digital Career Institute, Hamburg)
-                </h5>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany
-                  </p> -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="ed-duration">
-            <p class="ed-para-content">2022 May - 2023 February</p>
-          </div>
-        </div>
-        <div class="icons-edu experience-grid">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="experience-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">Front-End Technologies</h5>
-
-                <div class="experience-list">
-                  <p>
-                    Design simple pages and components using
-                    <span>FIGMA</span>
-                    and
-                    <span>draw.io</span>
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">
+                    Fullstack Web Development
+                  </h5>
+                  <p class="ed-para-content">
+                    Digital Career Institute, Hamburg, Germany
                   </p>
-                  <p>
-                    Developing responsive web application across platforms and
-                    mobile apps using
-                    <span>HTML</span>
-                    ,
-                    <span>CSS</span>
-                    (Sass)
-                    <span>Bootstrap</span>
-                    <span>Tailwindcss</span>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">2022 March - 2023 February</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
 
-                    and
-                    <span>Javascript</span>
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">
+                    Msc Computational Science and Engineering
+                  </h5>
+                  <p class="ed-para-content">
+                    University of Rostock, Rostock, Germany
                   </p>
-                  <p>
-                    Turn design pages and specific components into HTML, CSS
-                    and Javascript, DOM manipulation, complete application
-                    using only Javascript.
-                  </p>
-                  <p>
-                    Experience in using
-                    <span>Webpack</span>
-                    ,
-                    <span>NPM</span>
-                    ,
-                    <span>AJAX</span>
-                    and
-                    <span>Babel</span>
-                    .
-                  </p>
-                  <p>
-                    Used Technologies like
-                    <span>API</span>
-                    and version management
-                    <span>Git</span>
-                    ,
-                    <span>Github</span>
-                  </p>
-                  <p>
-                    Experience in
-                    <span>React</span>.A javascript library for building user interfaces.
-                  </p>
-                  <p>Experience in <span>Typescript</span>.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="icons-edu">
-          <div class="icons-flex-col">
-            <i class="fa-sharp fa-solid fa-play"></i>
-          </div>
-
-          <div class="education-section">
-            <div class="ed-class">
-              <div class="ed-content">
-                <h5 class="ed-header header-icons">
-                  Back-End Technologies
-                </h5>
-                <div class="experience-list">
-                  <p>
-                    Utilized <span>MongoDB</span> for database fundamentals.Created and maintained database schemas,
-                    ensuring data integrity and efficiency.
-                  </p>
-                  <p>
-                    Developed <span> APIs </span> with <span> Express.js </span>, implementing <span> CRUD
-                      (Create,Delete, Update, Delete)</span>operations.
-                  </p>
-                  <p>
-                    Leveraged <span> Node.js </span> for efficient server-side development, ensuring seamless data flow
-                    and high performance.
-                  </p>
-                  <p>
-                    Implemented robust security measures, including <span> authentication </span>and <span>authorization
-                    </span> protocols, to
-                    safeguard sensitive data and user privacy.
-                  </p>
-                  <p>
-                    Experience in <span>Java</span> programming language for backend development.
-                  </p>
-                  <p>Adjustment of configurations in the SiteFusion backend database.
-                    Development and optimization of <span> Xquery Magic </span> scripts for inserting, removing, and
-                    updating <span>wording</span> and <span> identifiers</span> as part of portal translations.</p>
-                  <p>Successful collaboration in an agile <span>SCRUM</span> team using software tools such as
-                    <span>Jira</span>, <span>Confluence</span>, and <span>Bitbucket</span>.
-                  </p>
-                </div>
-                <p class="ed-para-content">
-                  <!-- Digital Career Institute, Hamburg, Germany
-                  </p> -->
-                </p>
-              </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">2015 October - 2019 October</p>
             </div>
           </div>
-          <div class="ed-duration">
-            <p class="ed-para-content"></p>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">
+                    Bachelors in Computer Engineering
+                  </h5>
+                  <p class="ed-para-content">
+                    Hamdard University, Karachi, Pakistan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">2009 March - 2013 May</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="large-box-w-icons">
-      <div>
-        <div class="edu-div">
-          <h4 class="items link-headings hr-lines">05. Projects</h4>
+      <section id="languages" class="large-box-w-icons">
+        <div class="list-box">
+          <div class="edu-div">
+            <h4 class="items link-headings hr-lines">03. Languages</h4>
+          </div>
+
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">Arabic</h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">Basic</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">English</h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">Fluent</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">German</h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">C1</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">Pashto</h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">Fluent</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">Urdu / Hindi</h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">Fluent</p>
+            </div>
+          </div>
         </div>
-        <div class="project-div">
-          <!--Projects-->
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
-                  <!-- <p>New</p> -->
-                  <div>
-                    <a href="https://dressupshoptypescript-frontend.onrender.com/" target="#" aria-label="Dressup">
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                    <h5 class="new-project">New</h5>
+      </section>
+
+      <section id="experience" class="large-box-w-icons">
+        <div class="list-box">
+          <div class="edu-div">
+            <h4 class="items link-headings hr-lines">04. Experience</h4>
+          </div>
+
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">
+                    Developer (SiteFusion Gmbh, Straubing)
+                  </h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany
+                  </p> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">2023 May - 2024 April</p>
+            </div>
+          </div>
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">
+                    Tutor DCI (Digital Career Institute, Hamburg)
+                  </h5>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany
+                  </p> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ed-duration">
+              <p class="ed-para-content">2022 May - 2023 February</p>
+            </div>
+          </div>
+          <div class="icons-edu experience-grid">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
+
+            <div class="education-section">
+              <div class="experience-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">Front-End Technologies</h5>
+
+                  <div class="experience-list">
+                    <p>
+                      Design simple pages and components using
+                      <span>FIGMA</span>
+                      and
+                      <span>draw.io</span>
+                    </p>
+                    <p>
+                      Developing responsive web application across platforms and
+                      mobile apps using
+                      <span>HTML</span>
+                      ,
+                      <span>CSS</span>
+                      (Sass)
+                      <span>Bootstrap</span>
+                      <span>Tailwindcss</span>
+
+                      and
+                      <span>Javascript</span>
+                    </p>
+                    <p>
+                      Turn design pages and specific components into HTML, CSS
+                      and Javascript, DOM manipulation, complete application
+                      using only Javascript.
+                    </p>
+                    <p>
+                      Experience in using
+                      <span>Webpack</span>
+                      ,
+                      <span>NPM</span>
+                      ,
+                      <span>AJAX</span>
+                      and
+                      <span>Babel</span>
+                      .
+                    </p>
+                    <p>
+                      Used Technologies like
+                      <span>API</span>
+                      and version management
+                      <span>Git</span>
+                      ,
+                      <span>Github</span>
+                    </p>
+                    <p>
+                      Experience in
+                      <span>React</span>.A javascript library for building user
+                      interfaces.
+                    </p>
+                    <p>Experience in <span>Typescript</span>.</p>
                   </div>
                 </div>
-
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    DressUP
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    This full-stack application combines MongoDB, Express, React Typescript, and Node.js to deliver a
-                    seamless, interactive shopping experience, featuring real-time inventory management and
-                    user-friendly interfaces.
-                    <span class="note-span">Note: Some features may still be under construction</span>
-                  
-                </div>
-                <div class="project-contents">
-                  <p>React</p>
-                  <p>Typescript</p>
-                  <p>MERN Techn.</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <i class="fa-regular fa-solid fa-tablet"></i>
-                  <i class="fa-regular fa-solid fa-desktop"></i>
-                </div>
               </div>
             </div>
           </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
-                  <!-- <p>New</p> -->
+          <div class="icons-edu">
+            <div class="icons-flex-col">
+              <i class="fa-sharp fa-solid fa-play"></i>
+            </div>
 
-                  <a href="https://quizmahboobi.netlify.app/" target="#" aria-label="Quiz">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    Quiz
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    A simple quiz application where users can select options. Upon submitting the quiz based on their
-                    chosen option, the application displays correct or incorrect answers along with points.
-                    * The project will be updated as needed.
+            <div class="education-section">
+              <div class="ed-class">
+                <div class="ed-content">
+                  <h5 class="ed-header header-icons">Back-End Technologies</h5>
+                  <div class="experience-list">
+                    <p>
+                      Utilized <span>MongoDB</span> for database
+                      fundamentals.Created and maintained database schemas,
+                      ensuring data integrity and efficiency.
+                    </p>
+                    <p>
+                      Developed <span> APIs </span> with
+                      <span> Express.js </span>, implementing
+                      <span> CRUD (Create,Delete, Update, Delete)</span
+                      >operations.
+                    </p>
+                    <p>
+                      Leveraged <span> Node.js </span> for efficient server-side
+                      development, ensuring seamless data flow and high
+                      performance.
+                    </p>
+                    <p>
+                      Implemented robust security measures, including
+                      <span> authentication </span>and
+                      <span>authorization </span> protocols, to safeguard
+                      sensitive data and user privacy.
+                    </p>
+                    <p>
+                      Experience in <span>Java</span> programming language for
+                      backend development.
+                    </p>
+                    <p>
+                      Adjustment of configurations in the SiteFusion backend
+                      database. Development and optimization of
+                      <span> Xquery Magic </span> scripts for inserting,
+                      removing, and updating <span>wording</span> and
+                      <span> identifiers</span> as part of portal translations.
+                    </p>
+                    <p>
+                      Successful collaboration in an agile
+                      <span>SCRUM</span> team using software tools such as
+                      <span>Jira</span>, <span>Confluence</span>, and
+                      <span>Bitbucket</span>.
+                    </p>
+                  </div>
+                  <p class="ed-para-content">
+                    <!-- Digital Career Institute, Hamburg, Germany
+                  </p> -->
                   </p>
-                </div>
-                <div class="project-contents">
-                  <p>Styled Components</p>
-                  <p>Typescript</p>
-                  <p>React</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <i class="fa-regular fa-solid fa-tablet"></i>
-                  <i class="fa-regular fa-solid fa-desktop"></i>
                 </div>
               </div>
             </div>
+            <div class="ed-duration">
+              <p class="ed-para-content"></p>
+            </div>
           </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
-                  <!-- <p>New</p> -->
+        </div>
+      </section>
 
-                  <a href="https://iumahboobi.github.io/Countdown_To_Run/" target="#" aria-label="To Run">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    Count Down
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    A simple counter application, a user can enter his/her
-                    desire date and time. After entering the desire date and
-                    time he or she can press start and here you go the
-                    countdown starts.
-                  </p>
-                </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>SCSS</p>
-                  <p>Javascript</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <i class="fa-regular fa-solid fa-tablet"></i>
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+      <section id="projects" class="large-box-w-icons">
+        <div>
+          <div class="edu-div">
+            <h4 class="items link-headings hr-lines">05. Projects</h4>
+          </div>
+          <div class="project-div">
+            <!--Projects-->
+
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
+                    <div>
+                      <a
+                        href="https://evenplanner.netlify.app/"
+                        target="#"
+                        aria-label="Conference Expense Planner"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                      <h5 class="new-project">New</h5>
+                    </div>
+                  </div>
+
+                  <div class="project-contents">
+                    <h5>Project IBM</h5>
+                    <h5>E Plant</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>coming soon...</p>
+                  </div>
+
+                  <div class="project-contents">
+                    <p>React</p>
+                    <p>Redux</p>
+                    <p>Vite</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
+                    <div>
+                      <a
+                        href="https://evenplanner.netlify.app/"
+                        target="#"
+                        aria-label="Conference Expense Planner"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                      <h5 class="new-project">New</h5>
+                    </div>
+                  </div>
 
-                  <a href="https://kamilwawrzynczuk.github.io/Restaurant-DCI/" aria-label="Restaurant" target="#">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    The Restaurant
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    A group project with my class fellows. The Project is
-                    divided into different parts, and each group member has
-                    created and worked on his/her respective components.
-                  </p>
-                </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>Css</p>
-                  <p>Bootstrap</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <i class="fa-regular fa-solid fa-tablet"></i>
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+                  <div class="project-contents">
+                    <h5>Project IBM</h5>
+                    <h5>Conference Planner</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      The Conference Expense Planner is a web application
+                      designed to help users efficiently manage and track
+                      expenses related to conferences, events, and meals.
+                    </p>
+                  </div>
+
+                  <div class="project-contents">
+                    <p>React</p>
+                    <p>Redux</p>
+                    <p>Vite</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
-                  <!-- <p>New</p> -->
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
+                    <div>
+                      <a
+                        href="https://dressupshoptypescript-frontend.onrender.com/"
+                        target="#"
+                        aria-label="Dressup"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
 
-                  <a href="https://iumahboobi.github.io/benny_burger/" aria-label="Bunny Burger" target="#">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    Benny Burger
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    A demo project named Benny's Burger. Html css and
-                    Bootstrap technologies are used in this small responsive
-                    project
-                  </p>
-                </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>Css</p>
-                  <p>Bootstrap</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <i class="fa-regular fa-solid fa-tablet"></i>
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>DressUP</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      This full-stack application combines MongoDB, Express,
+                      React Typescript, and Node.js to deliver a seamless,
+                      interactive shopping experience, featuring real-time
+                      inventory management and user-friendly interfaces.
+                      <span class="note-span"
+                        >Note: Some features may still be under
+                        construction</span
+                      >
+                    </p>
+                  </div>
+
+                  <div class="project-contents">
+                    <p>React</p>
+                    <p>Typescript</p>
+                    <p>MERN Techn.</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
 
-                  <a href="https://form-application-iumahboobi.netlify.app/" aria-label="form-application" target="#">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>
-                    Form Application
-                  </h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    In this small form application, a user is able to insert
-                    his/her data and submit the form. The given information
-                    will be displayed on the User interface
-                  </p>
-                </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>Css</p>
-                  <p>Javascript</p>
-                </div>
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-mobile"></i>
-                  <!-- <i class="fa-regular fa-solid fa-tablet"></i> -->
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+                    <a
+                      href="https://quizmahboobi.netlify.app/"
+                      target="#"
+                      aria-label="Quiz"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>Quiz</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      A simple quiz application where users can select options.
+                      Upon submitting the quiz based on their chosen option, the
+                      application displays correct or incorrect answers along
+                      with points. * The project will be updated as needed.
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Styled Components</p>
+                    <p>Typescript</p>
+                    <p>React</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
 
-                  <a href="https://jobs-filtering-iumahboobi.netlify.app/" aria-label="form-application" target="#">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
+                    <a
+                      href="https://iumahboobi.github.io/Countdown_To_Run/"
+                      target="#"
+                      aria-label="To Run"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>Count Down</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      A simple counter application, a user can enter his/her
+                      desire date and time. After entering the desire date and
+                      time he or she can press start and here you go the
+                      countdown starts.
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>SCSS</p>
+                    <p>Javascript</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>Jobs filtering</h5>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+
+                    <a
+                      href="https://kamilwawrzynczuk.github.io/Restaurant-DCI/"
+                      aria-label="Restaurant"
+                      target="#"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>The Restaurant</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      A group project with my class fellows. The Project is
+                      divided into different parts, and each group member has
+                      created and worked on his/her respective components.
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Bootstrap</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
-                <div class="project-contents">
-                  <p>
-                    An intermediate web project using Javascript ,JSON data to
-                    filter out jobs based on selected categories.
-                  </p>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+                    <!-- <p>New</p> -->
+
+                    <a
+                      href="https://iumahboobi.github.io/benny_burger/"
+                      aria-label="Bunny Burger"
+                      target="#"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>Benny Burger</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      A demo project named Benny's Burger. Html css and
+                      Bootstrap technologies are used in this small responsive
+                      project
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Bootstrap</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-solid fa-tablet"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>Css</p>
-                  <p>Javascript</p>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+
+                    <a
+                      href="https://form-application-iumahboobi.netlify.app/"
+                      aria-label="form-application"
+                      target="#"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>Form Application</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      In this small form application, a user is able to insert
+                      his/her data and submit the form. The given information
+                      will be displayed on the User interface
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Javascript</p>
+                  </div>
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-mobile"></i>
+                    <!-- <i class="fa-regular fa-solid fa-tablet"></i> -->
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
-                <div class="project-contents">
-                  <!-- <i class="fa-regular fa-solid fa-mobile"></i>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
+
+                    <a
+                      href="https://jobs-filtering-iumahboobi.netlify.app/"
+                      aria-label="form-application"
+                      target="#"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>Jobs filtering</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      An intermediate web project using Javascript ,JSON data to
+                      filter out jobs based on selected categories.
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Javascript</p>
+                  </div>
+                  <div class="project-contents">
+                    <!-- <i class="fa-regular fa-solid fa-mobile"></i>
                     <i class="fa-regular fa-solid fa-tablet"></i> -->
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="proj-box">
-            <div class="banner">
-              <div class="projects">
-                <div class="project-contents">
-                  <i class="fa-regular fa-solid fa-folder"></i>
+            <div class="proj-box">
+              <div class="banner">
+                <div class="projects">
+                  <div class="project-contents">
+                    <i class="fa-regular fa-solid fa-folder"></i>
 
-                  <a href="https://url-shortening-iumahboobi.netlify.app/" aria-label="form-application" target="#">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-                <div class="project-contents">
-                  <h5>Project</h5>
-                  <h5>URL Shortening API</h5>
-                </div>
-                <div class="project-contents">
-                  <p>
-                    Integrate with the short-code URL shortening API and play
-                    with browser storage in this landing page challenge.
-                  </p>
-                </div>
-                <div class="project-contents">
-                  <p>Html</p>
-                  <p>Css</p>
-                  <p>Javascript</p>
-                </div>
-                <div class="project-contents">
-                  <!-- <i class="fa-regular fa-solid fa-mobile"></i>
+                    <a
+                      href="https://url-shortening-iumahboobi.netlify.app/"
+                      aria-label="form-application"
+                      target="#"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                  <div class="project-contents">
+                    <h5>Project</h5>
+                    <h5>URL Shortening API</h5>
+                  </div>
+                  <div class="project-contents">
+                    <p>
+                      Integrate with the short-code URL shortening API and play
+                      with browser storage in this landing page challenge.
+                    </p>
+                  </div>
+                  <div class="project-contents">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Javascript</p>
+                  </div>
+                  <div class="project-contents">
+                    <!-- <i class="fa-regular fa-solid fa-mobile"></i>
                     <i class="fa-regular fa-solid fa-tablet"></i> -->
-                  <i class="fa-regular fa-solid fa-desktop"></i>
+                    <i class="fa-regular fa-solid fa-desktop"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="large-box">
-      <div>
-        <div class="counter-Element">
-          <h4 class="items link-headings heading-center">06. Contact</h4>
+      <section id="contact" class="large-box">
+        <div>
+          <div class="counter-Element">
+            <h4 class="items link-headings heading-center">06. Contact</h4>
 
-          <div class="contact-section">
-            <h2>Get In Touch</h2>
-            <p class="para-center">
-              I am currently looking for any new opportunity, my inbox is
-              always open. Whether you have a question or just want to say hi,
-              I'll try my best to get back on to you!
-            </p>
-            <button class="res-btn half-btn">
-              <a href="mailto:iumahboobi@gmail.com" target="#">Say Hello</a>
-            </button>
+            <div class="contact-section">
+              <h2>Get In Touch</h2>
+              <p class="para-center">
+                I am currently looking for any new opportunity, my inbox is
+                always open. Whether you have a question or just want to say hi,
+                I'll try my best to get back on to you!
+              </p>
+              <button class="res-btn half-btn">
+                <a href="mailto:iumahboobi@gmail.com" target="#">Say Hello</a>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <nav class="footer-bar">
-        <div class="d-flex-row social-media-rotate">
-          <a href="mailto:iumahboobi@gmail.com" aria-label="google" target="#">
+      <section>
+        <nav class="footer-bar">
+          <div class="d-flex-row social-media-rotate">
+            <a
+              href="mailto:iumahboobi@gmail.com"
+              aria-label="google"
+              target="#"
+            >
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100085671197164"
+              aria-label="facebook"
+              target="#"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://github.com/iumahboobi"
+              target="#"
+              aria-label="github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <i class="footer-hr-line line-rotate"></i>
+          </div>
+          <div class="d-flex-row social-media-rotate">
+            <p class="email-rotate">iumahboobi@gmail.com</p>
+            <i class="footer-hr-line line-rotate"></i>
+          </div>
+        </nav>
+        <div class="footer-bar-trade">
+          <p class="trademark">Design and Created by</p>
+          <p><span>I</span>hsanullah <span>M</span>ahboobi</p>
+        </div>
+
+        <div class="visitors">
+          <div>
+            You visit:
+            <span class="website-counter"></span>
+            times
+          </div>
+
+          <div>
+            Total Visits:
+            <span id="visits" class="website-counter"></span>
+          </div>
+        </div>
+
+        <div class="contact-icons">
+          <a href="mailto:iumahboobi@gmail.com" aria-label="email" target="#">
             <i class="fa-brands fa-google"></i>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100085671197164" aria-label="facebook" target="#">
+          <a
+            href="https://www.facebook.com/profile.php?id=100085671197164"
+            aria-label="facebook"
+            target="#"
+          >
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="https://github.com/iumahboobi" target="#" aria-label="github">
+          <a
+            href="https://github.com/iumahboobi"
+            aria-label="github"
+            target="#"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
-          <i class="footer-hr-line line-rotate"></i>
+          <!-- <i class="footer-hr-line line-rotate"></i> -->
         </div>
-        <div class="d-flex-row social-media-rotate">
-          <p class="email-rotate">iumahboobi@gmail.com</p>
-          <i class="footer-hr-line line-rotate"></i>
-        </div>
-      </nav>
-      <div class="footer-bar-trade">
-        <p class="trademark">
-          Design and Created by
-        </p>
-        <p>
-          <span>I</span>hsanullah
-          <span>M</span>ahboobi
-        </p>
-      </div>
-
-      <div class="visitors">
-        <div>
-          You visit:
-          <span class="website-counter"></span>
-          times
-        </div>
-
-        <div>
-          Total Visits:
-          <span id="visits" class="website-counter"></span>
-        </div>
-      </div>
-
-      <div class="contact-icons">
-        <a href="mailto:iumahboobi@gmail.com" aria-label="email" target="#">
-          <i class="fa-brands fa-google"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100085671197164" aria-label="facebook" target="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://github.com/iumahboobi" aria-label="github" target="#">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <!-- <i class="footer-hr-line line-rotate"></i> -->
-      </div>
+      </section>
     </section>
-  </section>
-  <script src="/dist/script/index.js"></script>
-</body>
-
+    <script src="/dist/script/index.js"></script>
+  </body>
 </html>
