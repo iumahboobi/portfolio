@@ -1,0 +1,12 @@
+{
+  "title": "Ium Mahboobi",
+  "logo": "Ium",
+  "navigationBar": [
+    { "label": "About", "href": "#about-me" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Languages", "href": "#languages" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ]
+}
