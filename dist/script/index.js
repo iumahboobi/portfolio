@@ -13,7 +13,10 @@ async function loadData() {
 
     initPage();
     buildNavigationBar();   // create the <h3 id="logo-id">
+    heroSection()
+    aboutMe ()  // About me function
     attachEventHandlers();  // now it's safe to query #logo-id
+
   } catch (error) {
     console.log("Error loading page", error);
   }
@@ -21,7 +24,7 @@ async function loadData() {
 
 function initPage() {
   document.title = siteData.title ?? document.title;
-  console.log("Site title:", siteData.title);
+
 }
 
 // ---- DOM refs (queried later in attachEventHandlers to avoid nulls) ----
@@ -56,7 +59,160 @@ function buildNavigationBar() {
     navList.appendChild(list)
   }
   navigationBarContainer.appendChild(navList)
+
+
+  /**  Hamburger Icon function */
+
+  let hamburgerSection = document.createElement("section")
+  hamburgerSection.classList.add("hamburger-icon")
+  hamburgerSection.id = siteData.hamburgerIcon.id
+
+  let hamburgerChildArray = siteData.hamburgerIcon.children
+
+  for (let i = 0; i < hamburgerChildArray.length; i++) {
+
+    let iconDiv = document.createElement("div")
+    iconDiv.classList.add(hamburgerChildArray[i].class)
+    iconDiv.id = hamburgerChildArray[i].id
+    hamburgerSection.appendChild(iconDiv)
+  }
+  navigationBarContainer.appendChild(hamburgerSection)
+
+  let darkBlue = document.createElement("div")
+  darkBlue.classList.add("dark-blue")
+  darkBlue.id = "blue"
+  navigationBarContainer.appendChild(darkBlue)
+
+
+  /** Mobile navigation */
+
+  let mobNavContainer = document.createElement("div")
+  mobNavContainer.id = "mobNav"
+  mobNavContainer.classList.add("mob-nav")
+
+  let mobList = document.createElement("ul")
+  mobList.classList.add("mob-links")
+  mobList.id = ""
+
+  let mobListChildren = siteData.mobNavigation.mobList.links
+
+  for (let i = 0; i < mobListChildren.length; i++) {
+
+    let mobListItem = document.createElement("li")
+
+    let mobListItemLink = document.createElement("a")
+    mobListItemLink.href = mobListChildren[i].href
+    mobListItemLink.setAttribute("aria-label", mobListChildren[i].aria)
+    mobListItemLink.innerHTML = `${mobListChildren[i].number} ${mobListChildren[i].label}`
+    mobListItem.appendChild(mobListItemLink)
+    mobList.appendChild(mobListItem)
+  }
+  mobNavContainer.appendChild(mobList)
+  navigationBarContainer.appendChild(mobNavContainer)
+
 }
+/**  Hero Section */
+function heroSection() {
+
+  let mainContainer = document.querySelector(".hero-after")
+  let heroMobDiv = document.createElement("div")
+  heroMobDiv.classList.add(siteData.heroMobAfter.class)
+
+  //Array of heroAfterMobChild
+  let heroAfterMobChild = siteData.heroMobAfter.heroMobChild
+
+  for (let i = 0; i < heroAfterMobChild.length; i++) {
+
+    let item = heroAfterMobChild[i]
+    let tag = document.createElement(item.tag)
+
+    tag.className = item.class || ""
+    tag.textContent = item.label || ""
+
+    if (item.children) {
+      item.children.forEach(child => {
+        if (typeof child === "string") {
+          tag.appendChild(document.createTextNode(child))
+
+        } else {
+          let childEl = document.createElement(child.tag)
+
+          childEl.className = child.class || ""
+          childEl.textContent = child.label || ""
+
+          if (child.href) {
+            childEl.href = child.href
+
+          }
+          if (child.target) {
+            childEl.target = child.target
+          }
+          tag.appendChild(childEl)
+
+        }
+
+      })
+
+    }
+    else {
+      tag.textContent = item.label || ""
+
+    }
+    heroMobDiv.appendChild(tag)
+
+    
+  }
+  mainContainer.appendChild(heroMobDiv)
+
+}
+
+
+/** About Me section */
+
+
+function aboutMe () {
+
+
+   let aboutMeContainer = document.querySelector(siteData.aboutMe.class)
+  let aboutMeArr = siteData.aboutMe.children
+
+
+
+  for(let i=0 ; i<aboutMeArr.length; i++) {
+
+    let item = aboutMeArr[i]
+    let el = document.createElement(item.tag)
+
+    console.log(el)
+    
+    if(item.children) {
+      item.children.forEach(child=> {
+
+
+      })
+
+    }
+
+  }
+
+
+
+
+  let aboutMeHeader = document.createElement("h4")
+  
+
+
+
+   console.log('I am about Me section')
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -99,7 +255,7 @@ function attachEventHandlers() {
   const icon1 = document.getElementById("a");
   const icon2 = document.getElementById("b");
   const icon3 = document.getElementById("c");
-  const nav = document.querySelector(".mob-nav");
+  const nav = document.getElementById("mobNav");
   const blue = document.getElementById("blue");
 
   if (icon) {
@@ -152,7 +308,8 @@ function attachEventHandlers() {
 }
 
 // Global callback used by your total visits script (if any)
+
 function websiteVisits(response) {
   const el = document.querySelector("#visits");
-  if (el && response?.value != null) el.textContent = response.value;
+  if (el) el.textContent = response?.value ?? 0;
 }

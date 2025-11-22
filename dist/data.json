@@ -8,5 +8,122 @@
     { "label": "Experience", "href": "#experience" },
     { "label": "Projects", "href": "#projects" },
     { "label": "Contact", "href": "#contact" }
-  ]
+  ],
+  "hamburgerIcon": {
+    "id": "icon",
+    "children": [
+      { "class": "icon-1", "id": "a" },
+      { "class": "icon-2", "id": "b" },
+      { "class": "icon-3", "id": "c" },
+      { "class": "clear" }
+    ]
+  },
+  "mobNavigation": {
+    "class": "mob-nav",
+    "mobList": {
+      "class": "mob-links",
+      "id": "",
+      "links": [
+        {
+          "label": "About",
+          "href": "#about-me",
+          "aria": "about",
+          "number": "01."
+        },
+        {
+          "label": "Education",
+          "href": "#education",
+          "aria": "education",
+          "number": "02."
+        },
+        {
+          "label": "Language",
+          "href": "#languages",
+          "aria": "languages",
+          "number": "03."
+        },
+        {
+          "label": "Experience",
+          "href": "#experience",
+          "aria": "experience",
+          "number": "04."
+        },
+        {
+          "label": "Projects",
+          "href": "#projects",
+          "aria": "projects",
+          "number": "05."
+        },
+        {
+          "label": "Contact",
+          "href": "#contact",
+          "aria": "contact",
+          "number": "06."
+        }
+      ]
+    }
+  },
+  "heroMobAfter": {
+    "class": "mobile-col",
+    "heroMobChild": [
+      { "tag": "h4", "label": "Hi, my name is", "class": "items" },
+      {
+        "tag": "h1",
+        "label": "Ihsanullah Mahboobi",
+        "class": "items mobile-font"
+      },
+      {
+        "tag": "h2",
+        "label": "Lets build things for web together",
+        "class": "items mobile-font"
+      },
+
+      {
+        "tag": "p",
+        "class": "items para-formatting",
+        "children": [
+          "As Master of Science graduate seeking to find the opportunity to\nwork in a fun and challenging environment that will encourage me to\nimprove and learn new and necessary skills. For the moment I am\nbuilding websites, learning back-end technologies and a part-time Web\nDevelopment Tutor at ",
+          { "tag": "span", "label": "DCI" },
+          "."
+        ]
+      },
+
+      {
+        "tag": "button",
+        "class": "res-btn",
+        "children": [
+          {
+            "tag": "a",
+            "label": "Resume",
+            "href": "mailto:iumahboobi@gmail.com",
+            "target": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "aboutMe": {
+    "class": "list-box",
+
+    "children": [
+      {
+        "tag": "h4",
+        "class": "items link-headings hr-lines",
+        "label": "01. About Me"
+      },
+      {
+        "tag": "div",
+        "class": "d-flex-col",
+        "label": "",
+        "children": [
+          {
+            "tag": "p",
+            "class": "items para-formatting",
+            "label": "My name is Ihsanullah Mahboobi. I have completed a Master's in Computational Science and Engineering from the University of Rostock, Germany. My interest in web development began when I completed a Pre-thesis Project using web development technologies. After graduation, I started working on user interfaces and built some beginner-level front-end projects. With this knowledge, I have also undertaken some online freelance projects. Furthermore, I completed a one-year Fullstack Web Development program from DCI and worked as a tutor during the program."
+          },
+          { "tag": "div", "class": "items profile-pic", "label": "" }
+        ]
+      }
+    ]
+  }
 }
